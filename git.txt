@@ -1,0 +1,175 @@
+git init (untuk membuat git-nya secara lokal)
+
+
+git remote add origin (Copy link git repository yang dibuat)
+-----------------------------------------------------
+
+git add .
+
+git commit -m "masukkan nama commit terserah"
+
+git push -u origin master
+
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+hapus local git
+rm -fr .git
+
+-----------------------------------------------------
+
+cek link repo atau melihat nama remote
+git remote -v
+
+-----------------------------------------------------
+
+
+Windows Credentials
+.
+harus 2 punya credential
+git config --global credential.useHttpPath true
+.
+
+lihat
+git config --global -e  atau
+git config --list
+
+keluar
+Q
+
+
+
+-----------------------------------------------------
+
+
+git clone (masukkan url repository)
+
+
+
+
+Token ModulCerda :
+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
+
+-----------------------------------------------------
+
+Toke Panduprayudi = Primary
+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
+
+
+
+
+https://github.com/Panduprayudi/bisa.git
+
+
+
+
+https://github.com/Panduprayudi/wpu-git-tes.git
+
+
+# Project HTML CSS Lewati Iklan
+web statis my project untuk download game gta5
+
+
+
+
+
+KASUS 1 - KETIKA BELUM ADA PROJECT, MENGAMBIL DARI GITHUB DENGAN CARA CLONE
+---------------------------------------------------------------------------
+Menghubungkan project ke komputer lokal ke GIT dan GITHUB
+
+1. Pertama ambil dulu file repo dengan cara :
+--git clone--
+
+2. ls = list lihat daftar nama file
+
+3. Lalu masuk ke folder :
+--cd (nama forlder yang sudah dibuat clone/) --
+
+4. setelah ada perubah dengan file 
+
+5. tambahkan ke git dengan cara :
+--git add . --
+
+6. lalu commit :
+--git commit -m "terserah nama commit yang ingin dibuat"--
+
+jika ingin satu kali dengan add perintahnya karna sudah di modify :
+-git commit -am "terserah nama commit yang ingin dibuat"--
+
+7. lalu push perubah dengan cara :
+--git push--
+
+
+-----------------------------------------------------------------
+
+Perintah lainnya :
+git remote = melihat nama remote 
+		(nama remote ini bisa dubah tapi ketika kita 
+		mengcloning sebuah repo dari github otomatis nama remotenya origin)
+
+git remote -v  = cek link repo atau melihat lebih detail nama remote
+
+git status = untuk melihat kita berada di branch(cabang) apa, jika ada file yang warna merah,
+		itu tandanya masih di working area, belum di pindahkan di stajing area
+
+
+-----------------------------------------------------------------
+
+CARA MENGGANTI USER NAME GIT (15:42) https://youtu.be/ppi_M-FX1CY
+
+git config --global/local
+kalo local tiap-tiap repo login yang beda boleh pake local
+
+1. git config --global user.name "Panduprayudi"
+2. git config --global user.email "panduprayudi219@gmail.com"
+
+
+
+
+
+
+
+
+
+
+KASUS 2 - PROJECT ADA DI LOCAL KOMPUTER LALU INGIN DI SIMPAN KE GITHUB
+-----------------------------------------------------------------------
+1. Cara bikin folder baru di git.
+-- mkdir (nama folder yang ingin dibuat) --
+
+2. Masuk ke folder :
+-- cd nama folder --
+
+3. buat nama folder yang dibuat jadi REPO GIT :
+-- git init --
+
+4. Melihat file yang sudah dibuat :
+-- ls --
+
+5. jika sudah ada tinggal di tambahkan :
+-- git add . --
+
+6. setelah sudah di tambahkan, di commit :
+-- git commit -am (karna sudah di modify jadi pake -am) (nama commint terserah)
+
+7. harus buat repo baru di github , tapi tidak usah centang README
+
+8. Setelah repo sudah dibuat, COPY git remote add origin(nama origin adalah nama remote default jadi bisa diubah sesuka hati)
+
+9. Pastekan di git dan enter
+
+10. Selamat andah sudah berhasil membuat remote dengan nama origin dan menmbahkan ke github,
+    tinggal di push saja.
+
+11. cara push, git push -u origin master, jika sudha seperti ini
+    berikutnya tinggal ketikkan perintah "git push" saja, karena sudah di push ke origin master
+
+12. Jika ada perubahan JANGAN LUPA DI COMMIT (git commit -am "nama commit")
+
+13. lalu di push, CARA-NYA (git push)
